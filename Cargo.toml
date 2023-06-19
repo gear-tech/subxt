@@ -72,11 +72,13 @@ wasm-bindgen-test = "0.3.24"
 which = "4.4.0"
 
 # Substrate crates:
-sp-core = { version = "7.0.0", default-features = false }
-sp-core-hashing = "5.0.0"
-sp-keyring = "24.0.0"
-sp-runtime = "7.0.0"
-sp-version = "22.0.0"
+sp-core = { version = "7.0.0", git = "https://github.com/gear-tech/substrate.git", branch="gear-polkadot-v0.9.41-canary" }
+sp-core-hashing = { version = "5.0.0", git = "https://github.com/gear-tech/substrate.git", branch="gear-polkadot-v0.9.41-canary" }
+sp-keyring = { version = "7.0.0", git = "https://github.com/gear-tech/substrate.git", branch = "gear-polkadot-v0.9.41-canary" }
+# sp-keyring = "24.0.0"
+sp-runtime = { version = "7.0.0", git = "https://github.com/gear-tech/substrate.git", branch="gear-polkadot-v0.9.41-canary" }
+sp-version = { version = "5.0.0", git = "https://github.com/gear-tech/substrate.git", branch = "gear-polkadot-v0.9.41-canary" }
+# sp-version = "22.0.0"
 
 # Subxt workspace crates:
 subxt = { version = "0.29.0", path = "subxt" }
